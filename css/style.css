@@ -7,15 +7,85 @@
 :root {
   font-family: "Fredoka", sans-serif;
   --title_color: #e53170;
+  --card_color: #0f0e17;
+  --card_text_color: white;
+  --contatto_color: #72c4dc;
+  --img_size: 100px;
+  --margine_inferiore_val: 30px;
+  --margine_destro_val: 20px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 /* /general */
 
 /* header */
 header {
-  margin: 20px 0;
+  margin: 20px 0 40px;
   text-align: center;
 }
 h1 {
   color: var(--title_color);
 }
 /* /header */
+
+/* main */
+main {
+  max-width: 75vw;
+  margin: 0 auto;
+}
+p {
+  text-align: center;
+}
+img {
+  width: 100px;
+  vertical-align: bottom;
+}
+.card {
+  width: calc((100% - var(--margine_destro_val) * 2) / 3);
+  height: 100px;
+  float: left;
+  background-color: var(--card_color);
+  color: var(--card_text_color);
+  box-shadow: 1px 1px 20px 3px #d2d3d1;
+}
+.margine_destro {
+  margin-right: var(--margine_destro_val);
+}
+.margine_inferiore {
+  margin-bottom: var(--margine_inferiore_val);
+}
+.colonna_immagine,
+.colonna_testo {
+  display: inline-block;
+}
+.colonna_immagine {
+  width: var(--img_size);
+  float: left;
+}
+.colonna_testo {
+  width: calc(100% - var(--img_size));
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translate(0, -50%);
+}
+.container > div {
+  margin-bottom: 0.3rem;
+}
+
+.container div:first-child {
+  font-size: 1.2rem;
+}
+
+.container div:last-child {
+  color: var(--contatto_color);
+}
+/* /main */
