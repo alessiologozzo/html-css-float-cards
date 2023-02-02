@@ -1,0 +1,21 @@
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: "Fredoka", sans-serif;
+  --title_color: #e53170;
+}
+/* /general */
+
+/* header */
+header {
+  margin: 20px 0;
+  text-align: center;
+}
+h1 {
+  color: var(--title_color);
+}
+/* /header */
