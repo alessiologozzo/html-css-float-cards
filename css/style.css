@@ -57,10 +57,7 @@ img {
 .margine_inferiore {
   margin-bottom: var(--margine_inferiore_val);
 }
-.colonna_immagine,
-.colonna_testo {
-  display: inline-block;
-}
+
 .colonna_immagine {
   width: var(--img_size);
   float: left;
