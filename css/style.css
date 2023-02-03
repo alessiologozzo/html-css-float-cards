@@ -77,11 +77,9 @@ img {
 .container > div {
   margin-bottom: 0.3rem;
 }
-
 .container div:first-child {
   font-size: 1.2rem;
 }
-
 .container div:last-child {
   color: var(--contatto_color);
 }
